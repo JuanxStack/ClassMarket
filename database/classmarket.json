@@ -1,0 +1,12 @@
+{
+  "database": "classmarket",
+  "engine": "MySQL",
+  "schema": "./classmarket.sql",
+  "api": "Node.js Express",
+  "tables": {
+    "users": "Contas; senha armazenada como hash",
+    "products": "Anúncios, valores, estoque e imagens",
+    "orders": "Pedidos",
+    "order_items": "Produtos de cada pedido"
+  }
+}

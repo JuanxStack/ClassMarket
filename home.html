@@ -1,0 +1,94 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Class Market</title>
+
+        <link rel="stylesheet" href="./css/home.css">
+
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+
+    <body>
+
+            <nav class="navbar">
+                <a class="brand" href="./home.html">
+                    <span class="brand-mark"><i class="fa-solid fa-store"></i></span>
+                    <span>Class Market</span>
+                </a>
+
+                <form class="search" id="searchForm">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input id="searchInput" type="search" placeholder="Buscar produtos..." autocomplete="off">
+                </form>
+
+                <div class="nav-actions">
+                    <a class="nav-link" href="./telaDoCATALOGO.html">
+                        <i class="fa-solid fa-grid-2"></i> Catálogo
+                    </a>
+                    <a class="nav-button" href="./cad.html">
+                        <i class="fa-solid fa-plus"></i> Anunciar
+                    </a>
+                    <a class="nav-link account" href="./CadastroUsuario.html">
+                        <i class="fa-regular fa-user"></i>
+                        <span>Entrar</span>
+                    </a>
+                </div>
+            </nav>
+
+            <main>
+            <section class="vitrine">
+                <div class="hero-copy">
+                    <span class="eyebrow">Feito por alunos da FUCAPI</span>
+                    <h1>Descubra sabores feitos na sua escola.</h1>
+                    <p>Brownies, salgados, bebidas e doces preparados por estudantes da comunidade.</p>
+                    <div class="botao">
+                        <a class="primary" href="#produtos">Explorar produtos <i class="fa-solid fa-arrow-right"></i></a>
+                        <a class="secondary" href="./cad.html">Quero vender</a>
+                    </div>
+                </div>
+                <div class="hero-art" aria-hidden="true">
+                    <div class="hero-card hero-card-main">
+                        <span>Feito por alunos</span>
+                        <strong>Talentos da nossa comunidade</strong>
+                        <small>Descubra algo novo</small>
+                    </div>
+                    <div class="hero-circle"><i class="fa-solid fa-cookie-bite"></i></div>
+                </div>
+            </section>
+
+        <section class="catalog-section" id="produtos">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">Seleção da comunidade</span>
+                    <h2>Produtos em destaque</h2>
+                </div>
+                <a href="./telaDoCATALOGO.html">Ver catálogo <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="category-tabs" id="categoryTabs">
+                <button class="active" data-category="todos">Todos</button>
+                <button data-category="doces">Doces</button>
+                <button data-category="salgados">Salgados</button>
+                <button data-category="bebidas">Bebidas</button>
+            </div>
+
+            <div class="product-grid" id="carrosselProdutos"></div>
+        </section>
+        </main>
+
+        <footer>
+
+            <p>
+                &copy; Desenvolvido pela turma MBI-Fucapi
+            </p>
+
+        </footer>
+
+        <script src="./js/database.js"></script>
+        <script src="./js/home.js"></script>
+
+    </body>
+    </html>

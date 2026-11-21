@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro Produto</title>
+
+  <link rel="stylesheet" href="./css/cadastro.css">
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <a href="./home.html">Início</a>
+  </nav>
+
+  <span>ClassMarket</span>
+
+</header>
+
+<main>
+
+  <div class="card">
+
+    <h1>Cadastro de Produto</h1>
+
+    <form id="formProduto">
+
+      <input id="nome-produto" placeholder="Nome do produto" maxlength="120" required>
+
+      <input id="preco" type="number" min="0.01" step="0.01" placeholder="Preço" required>
+
+      <input id="estoque" type="number" min="0" step="1" placeholder="Estoque" required>
+
+      <select id="categoria" required>
+
+        <option value="">Categoria</option>
+        <option value="doces">Doces</option>
+        <option value="salgados">Salgados</option>
+        <option value="bebidas">Bebidas</option>
+
+      </select>
+
+      <input type="file" id="foto" accept="image/jpeg,image/png,image/webp,image/gif" required>
+
+      <textarea id="descricao" placeholder="Descrição do produto" maxlength="3000"></textarea>
+
+      <input id="bloco" placeholder="Bloco">
+
+      <input id="sala" placeholder="Sala">
+
+      <button type="submit">Enviar para Home</button>
+
+    </form>
+
+  </div>
+
+</main>
+
+<script src="./js/database.js"></script>
+<script src="./js/cadastroProduto.js"></script>
+
+</body>
+</html>
